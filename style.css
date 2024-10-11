@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Sacramento&display=swap');
+
+body {
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #747264;
+}
+
+:root {
+    --navBar_Background: #EEEDEB;
+    --navBarButtons: #747264;
+    --text_color: #3C3633;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+    backdrop-filter: blur(4px);
+}
+
+.navBar-toggler {
+    width: 4rem;
+    height: 3rem;
+    background-color: var(--text_color);
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.navbar-icon::before {
+    content: "Open";
+    color: #EEEDEB;
+    font-size: 1rem;
+    transition: display 1s ease-in-out;
+}
+
+.navbar-collapse::before {
+    content: "Close";
+    color: #EEEDEB;
+    font-size: 1rem;
+    transition: display 1s ease-in-out;
+}
+
+.nav-item {
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: #EEEDEB;
+}
+
+.nav-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text_color);
+}
+
+.nav-list {
+    list-style: none;
+    /* display: none; */
+    display: none;
+    background-color: var(--navBarButtons);
+    padding: 1rem;
+}
+
+.nav-list-show {
+    display: block;
+}
+
+.main-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3C3633;
+    width: 75%;
+    height: 75%;
+    border-radius: 1rem;
+    z-index: -3;
+}
+
+.introduction-container {
+    background-image: url('assets/pfp.jpg');
+    background-size: cover;
+    width: 75%;
+    height: 200px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    -webkit-mask-image: radial-gradient(circle, black 75%, rgba(0, 0, 0, 0.5) 75%);
+    mask-image: radial-gradient(circle, black 60%, rgba(0, 0, 0, 0.5) 75%);
+}
+
+.projects-container {
+    width: 75%;
+    height: auto;
+    background-color: var(--navBarButtons);
+    border-radius: 1rem;
+    border: 0.2rem solid var(--text_color);
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.greeting {
+    color: #EEEDEB;
+    text-shadow: 4px 4px var(--text_color);
+    font-family: "Sacramento";
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.projects-container-heading {
+    font-size: 1rem;
+    font-family: "Poppins";
+    color: #EEEDEB;
+    text-decoration-line: underline;
+    text-decoration-color: var(--text_color);
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    height: auto;
+    width: 75%;
+    display: flex;
+    gap: 0.5rem;
+    overflow: auto;
+    background-color: var(--text_color);
+    border-radius: 1rem;
+    border: 0.1rem dashed #E0CCBE;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px var(--text_color);
+    margin-bottom: 1rem;
+}
+
+.card-img {
+    width: 50%;
+}
+
+.card-description {
+    width: 50%;
+    background-color: #E0CCBE;
+    padding: 1rem;
+    border-radius: 1rem;
+    word-break: break-all;
+}
+
+.card-description-heading {
+    font-family: "Poppins";
+    font-size: 0.8rem;
+    color: var(--text_color);
+    font-weight: bold;
+
+}
+
+.tools {
+    font-family: "Sacramento";
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contacts-container {
+    background-color: #E0CCBE;
+    padding: 2rem;
+    width: 75%;
+    border-radius: 1rem;
+    border: 0.3rem double #747264;
+    box-shadow: 10px 10px 40px var(--text_color);
+}
+
+.submit-btn {
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    background-color: #747264;
+    border: 1px solid #EEEDEB;
+    color: #E0CCBE;
+    font-family: "Poppins";
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.submit-btn:hover {
+    background-color: #EEEDEB;
+    color: #3C3633;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
+    outline: none;
+    border-radius: 1rem;
+    border: 0.2rem dashed #EEEDEB;
+}
+
+input,
+textarea::placeholder {
+    font-family: "Sacramento";
+}
+
+label {
+    color: var(--text_color);
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Poppins";
+
+}
+
+.footer {
+    width: 50px;
+    height: 50px;
+    background-color: #3C3633;
+    position: fixed;
+    bottom: 0px;
+    border-radius: 50%;
+    right: 0px;
+}
+
+.eyes {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.eye {
+    height: 15px;
+    width: 10px;
+    background-color: #EEEDEB;
+    border-radius: 50%;
+    animation: move 1s linear 5s infinite alternate;
+}
+
+.social-links-list {
+    background-color: #E0CCBE;
+    position: relative;
+    bottom: 70px;
+    right: 200px;
+    list-style-type: none;
+    padding: 1rem;
+    display: none;
+    width: fit-content;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px #3C3633;
+}
+
+.link:hover {
+    filter: drop-shadow(1px 1px var(--text_color));
+}
+
+.link-item {
+    color: #3C3633;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.footer-links-show {
+    display: flex;
+    align-items: center;
+}
+
+input:hover,
+textarea:hover {
+    background-color: var(--text_color);
+    color: #EEEDEB;
+}
+
+@keyframes move {
+    from {
+        background-color: #EEEDEB;
+    }
+
+    to {
+        background-color: var(--text_color);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navBar-toggler {
+        display: none
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 1rem;
+        background-color: transparent;
+    }
+
+    .nav-item {
+        color: #3C3633;
+        font-size: 1.3rem;
+    }
+
+    .nav-link {
+        transition: all 0.6s ease;
+    }
+
+    .nav-link:hover {
+        background-color: #3C3633;
+        color: #EEEDEB;
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    .intro-container {
+        height: 500px;
+        width: 500px;
+    }
+
+    .introduction-container {
+        width: 75%;
+        height: 450px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-image: unset;
+        mask-image: unset;
+        text-align: center;
+        vertical-align: text-bottom;
+    }
+
+    .greeting {
+        font-size: 2rem;
+        text-shadow: 5px 5px var(--text_color);
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 450px);
+        grid-template-rows: repeat(3, 250px);
+    }
+
+    .projects-container-heading {
+        font-size: 2.1rem;
+    }
+
+    .card {
+        height: 200px;
+        width: 400px;
+        overflow: hidden;
+    }
+
+    .card-img {
+        width: 20%;
+    }
+
+    .card-description {
+        width: auto;
+    }
+
+    .card-description-heading {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        height: 85px;
+        width: 70px;
+    }
+
+    .eye {
+        height: 30px;
+    }
+
+    input,
+    textarea {
+        font-size: 1.3rem;
+        transition: all 0.8s ease;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+
+}
