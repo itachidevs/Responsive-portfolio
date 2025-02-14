@@ -22,8 +22,8 @@ const projects=[
       name:"Portfolio",
         desc:"A simple responsive portfolio which showcase my skills.",
         stack:["HTML","CSS","JavaScript",],
-        live:"",
-        source:""
+        live:"https://itachidevs.github.io/Responsive-portfolio/",
+        source:"https://github.com/itachidevs/Responsive-portfolio.git"
       },
       {
       name:"Emoji Game",
