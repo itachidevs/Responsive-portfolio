@@ -68,10 +68,10 @@ body {
 }
 .btn-cont{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
 
 }
@@ -83,8 +83,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.3s;
-    width: 200px;
-    height: 60px;
+  width: 100%;
     font-size: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 1rem;
