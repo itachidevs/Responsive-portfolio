@@ -16,7 +16,8 @@ body {
 }
 .logo{
    
-    width: 40%;
+   width: 200px;
+   height: 200px;
     border-radius: 50%;
     box-shadow: var(--headings) 5px 5px 10px;
 }
@@ -29,14 +30,12 @@ body {
     text-align: center;
     height :100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 1rem;
 }
-.hero section{
-    width: 100%;
-}
+
 
 .hero h1 {
     font-family: 'Poppins', sans-serif;
