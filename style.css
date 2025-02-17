@@ -15,8 +15,8 @@ body {
     line-height: 1.6;
 }
 .logo{
-   width: 400px;
-   height: 400px;
+   width: 500px;
+   height: 500px;
     border-radius: 50%;
     box-shadow: var(--headings) 5px 5px 10px;
 }
@@ -82,7 +82,8 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.3s;
-  width: 100%;
+  width: 50%;
+  height: 60px;
     font-size: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 1rem;
@@ -106,7 +107,7 @@ body {
 
 .project-card {
     background: white;
-    padding: 20px;
+    padding: 1rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s;
     background-color: var(--bg);
@@ -135,11 +136,12 @@ height: auto;
 .project-card h3,p {
     color: var(--headings);
     margin-bottom: 15px;
+    font-size: 2rem;
 }
 .span{
 position: relative;
-width: 50px;
-height: 50px;
+width: 150px;
+height: 150px;
 background-color: var(--headings);
 border-radius: 50%;
 top: -30px;
@@ -164,8 +166,8 @@ align-content: center;
     gap: 1rem;
 }
 .eye{
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
     background-color: #E4B1F0;
     position: relative;
     top: 0;
