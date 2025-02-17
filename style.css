@@ -16,8 +16,8 @@ body {
 }
 .logo{
    
-   width: 200px;
-   height: 200px;
+   width: 400px;
+   height: 400px;
     border-radius: 50%;
     box-shadow: var(--headings) 5px 5px 10px;
 }
